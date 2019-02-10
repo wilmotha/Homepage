@@ -8,6 +8,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "handlebars views/layouts/main.handlebars -f public/templates/main.js && handlebars views/homepage.handlebars -f public/templates/homepage.js && handlebars views/projects.handlebars -f public/templates/projects.js && handlebars views/about-me.handlebars -f public/templates/about-me.js && handlebars views/partials/header.handlebars -f public/templates/header.js",
         "prestart": "npm run build",
+        "deploy": "npm run build && rsync -avz build/ flip.engr.oregonstate.edu:public_html/Homepage/deploy.sh",
         "start": "node server.js"
     },
     "repository": {
@@ -16,7 +17,7 @@
     },
     "author": "Austin",
     "license": "UNLICENSED",
-    "homepage": "http://localhost",
+    "homepage": "http://web.engr.oregonstate.edu/~wilmotha/",
     "dependencies": {
         "body-parser": "^1.18.3",
         "cookie-parser": "^1.4.3",
