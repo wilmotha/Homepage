@@ -6,7 +6,7 @@
     "scripts": {
         "serve": "nodemon server.js",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "",
+        "build": "handlebars views/layouts/main.handlebars -f public/templates/main.js && handlebars views/homepage.handlebars -f public/templates/homepage.js && handlebars views/projects.handlebars -f public/templates/projects.js && handlebars views/about-me.handlebars -f public/templates/about-me.js && handlebars views/partials/header.handlebars -f public/templates/header.js",
         "prestart": "npm run build",
         "start": "node server.js"
     },
