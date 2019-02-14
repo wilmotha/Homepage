@@ -5,7 +5,7 @@ templates['main'] = template({"compiler":[7,">= 4.0.0"],"main":function(containe
 
   return "<html>\r\n    <head>\r\n        <meta charset=\"utf-8\">\r\n        <title>AWebsite - "
     + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</title>\r\n\r\n        <script src=\"index.js\" charset=\"utf-8\" defer></script>\r\n        \r\n        <link rel=\"stylesheet\" href=\"style.css\" media=\"screen\">   \r\n\r\n        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\r\n    </head>\r\n\r\n    "
+    + "</title>\r\n\r\n        <script src=\"index.js\" charset=\"utf-8\" defer></script>\r\n        \r\n        <link rel=\"stylesheet\" href=\"style.css\" media=\"screen\">   \r\n\r\n        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\r\n        <link href=\"https://fonts.googleapis.com/css?family=Montserrat\" rel=\"stylesheet\">\r\n    </head>\r\n\r\n    "
     + ((stack1 = ((helper = (helper = helpers.body || (depth0 != null ? depth0.body : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"body","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "\r\n\r\n</html>";
 },"useData":true});
