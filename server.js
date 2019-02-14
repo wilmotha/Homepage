@@ -1,8 +1,7 @@
 var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
-var https = require('https');
-var http = require('http');
+
 
 
 var app = express();
@@ -41,6 +40,7 @@ app.get('/about-me', function (req, res, next) {
     });
 });
 
+app.use(express.static('public'));
 
 app.listen(port, function(err){
     console.log("== Server is listening on port", port);
