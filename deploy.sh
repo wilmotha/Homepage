@@ -3,7 +3,7 @@
 DEPLOY_USERNAME="wilmotha"
 DEPLOY_HOST="flip.engr.oregonstate.edu"
 DEPLOY_DEST_DIR="public_html"
-DEPLOY_SRC_DIR="build"
+DEPLOY_SRC_DIR="/"
 DEPLOY_BRANCH="master"
 
 # Only deploy from master branch.

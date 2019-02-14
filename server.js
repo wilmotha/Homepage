@@ -11,21 +11,30 @@ app.set('view engine', 'handlebars');
 app.get('/', function(req, res, next){
     res.status(200);
     res.render('homepage', {
-        title: 'Home'
+        title: 'Home',
+        home: 'cur',
+        projects: 'not',
+        aboutme: 'not'
     });
 });
 
 app.get('/projects', function (req, res, next) {
     res.status(200);
     res.render('projects', {
-        title: 'Projects'
+        title: 'Projects',
+        home: 'not',
+        projects: 'cur',
+        aboutme: 'not'
     });
 });
 
 app.get('/about-me', function (req, res, next) {
     res.status(200);
     res.render('about-me', {
-        title: 'About Me'
+        title: 'About Me',
+        home: 'not',
+        projects: 'not',
+        aboutme: 'cur'
     });
 });
 
