@@ -1,8 +1,10 @@
 body {
+  display: inline-block;
   padding: 0;
   margin: 0;
   background-color: white;
   font-family: 'Montserrat', sans-serif;
+  width: 100vw;
 }
 
 nav {
@@ -76,8 +78,19 @@ nav a {
   background:lightgrey;
 }
 
-#about-title {
+.main-content {
+  /* display: -webkit-flex; */
+  display: grid;
+  /* -webkit-align-items: center; */
+  align-items: center;
+  /* -webkit-justify-content: center; */
+  justify-content: center;
+}
+
+.big-title {
+  text-align: center;
   font-size: 90px;
+  
 }
 
 #description { 
@@ -97,6 +110,7 @@ nav a {
   display: inline-block;
   border: 6px solid black;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #me {
@@ -109,11 +123,13 @@ nav a {
   padding: 10px;
   background: lightgrey;
   vertical-align: super;
+  
 }
 
 #resume {
   color: white;
   font-size: 20px;
+  
 }
 
 #title {
@@ -127,4 +143,20 @@ nav a {
   display: inline-block;
   font-size: 10px;
   color: white;
+}
+
+#snow-jeep {
+  height: auto;
+  width: 100%;
+  max-width: 1008px;
+}
+
+#error-404 {
+  font-size: 150px;
+  padding: 1px;
+  margin: 10px;  
+}
+
+#take-home {
+  text-align: center;
 }
