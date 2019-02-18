@@ -37,6 +37,7 @@ nav a {
 
 #social-links{
   display: inline;
+  float: right;
 }
 
 .fa {
